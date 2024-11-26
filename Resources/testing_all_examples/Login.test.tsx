@@ -1,10 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import Login from "./Login";
 
-
-
-
-
 describe("Login Component", () => {
     // 1. Testing component loading
     test("should render component without crashing", () => {
@@ -64,12 +60,6 @@ it('should render invalid message after login button click [INVALID USER]', () =
     let paraElement = container.querySelector("#result")    // get textbox value 
     expect(paraElement?.textContent).toBe("Invalid User Id or Password");
 });
-
-
-
-
-
-
 });
 
 
